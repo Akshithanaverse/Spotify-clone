@@ -1,0 +1,822 @@
+/* For the whole page */
+*
+{
+    font-family: 'Montserrat',sans-serif;
+    margin:0;
+    background-color: black;
+    color:#fff;
+    overflow:hidden;
+}
+
+
+/* For the main content*/
+.main
+{
+    display:flex;
+    height:100vh;
+}
+
+
+/* Search bar contents on the top */
+.search-bar
+{
+    display:flex;
+    background-color:black;
+    top:0;
+    position:fixed;
+    z-index: 1000;
+    width:100%;
+    height:60px;
+    align-items: center;
+}
+.logo
+{
+    background-color: inherit;
+    margin-left:1rem;
+}
+.logo i
+{
+    background-color: inherit;
+    font-size:2.4rem;
+}
+.search
+{
+    display:flex;
+    background-color: inherit;
+    align-items: center;
+    margin-left:28rem;
+}
+.home
+{
+    background-color: #1F1F1F;
+    padding:0.5rem 0.5rem;
+    height:fit-content;
+    width:fit-content;
+    border-radius:100px;
+    margin-left:1.2rem;
+    margin-right:0.9rem;
+    font-size:1.3rem;
+    transition:transform 0.3s ease-in-out;
+}
+.home i
+{
+    background-color: inherit;
+}
+.home:hover
+{
+    transform: scale(1.02);
+}
+.search-main
+{
+    position: relative;
+    display:inline-block;
+    border-radius: 80px; 
+    background-color: #1F1F1F;
+}
+.search-main input
+{
+    padding: 15px 30px 15px 40px; /* Adjust padding for icon */
+    width: 400px; /* Set the width of the input */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 80px; 
+    opacity:0.7;
+    font-weight:600;
+    background-color: #1F1F1F;
+    font-size: 0.9rem;
+}
+#search-icon
+{
+    position: absolute;
+    left: 10px; 
+    top: 50%; 
+    color:white;
+    transform: translateY(-50%); 
+    pointer-events: all; 
+    opacity:0.7;
+    font-weight:600;
+    z-index: 1000;
+    background-color: #1F1F1F;
+    font-size: 1.2rem;
+}
+#folder-icon
+{
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    right: 20px; /* Position of the end icon */
+    cursor: pointer; /* Change cursor for the end icon */
+    pointer-events: all;
+    color:white;
+    opacity:0.7;
+    z-index:1000;
+    background-color: #1F1F1F;
+    font-size: 1rem;
+}
+.search-main #folder-icon:hover
+{
+    opacity:1;
+}
+.search-main:hover
+{
+    border: white solid;
+    background-color: grey;
+    border-width: 1px;
+}
+.search-main:hover #search-icon
+{
+    opacity:1;
+}
+.enter
+{
+    display:flex;
+    background-color: inherit;
+    margin-left: 16rem;
+    align-items:center;
+}
+.sign-up
+{
+    background-color: inherit;
+    opacity:0.7;
+    transition: transform 0.5s;
+    font-weight:600;
+
+}
+.sign-up:hover
+{
+    opacity:1;
+    transform:scale(1.02);
+    cursor: pointer;
+}
+.button-0
+{
+    border:none;
+    width:7rem;
+    height:3rem;
+    border-radius: 100px;
+    margin-left:1rem;
+    color:black;
+    background-color: white;
+    font-weight:800;
+    margin-right:1.02rem;
+    transition: transform 0.3s ease-in-out;
+}
+.button-0:hover
+{
+    transform:scale(1.03);
+}
+
+/* Side bar contents pn the left */
+.side-bar
+{
+    background-color: #121212;
+    width:355px;
+    border-radius:0.5rem;
+    margin-top:67px;
+    margin-bottom:79px;
+    margin-left: 6px;
+    margin-right:6px;
+    
+}
+/*1.Side bar -> Library Div */
+.library
+{
+    width: 353px;
+    height:76px;
+    display:flex;
+    align-items: center;
+    background-color: inherit;
+    font-size: 1rem;
+}
+.library-content
+{
+    display:flex;
+    background-color: inherit;
+    opacity:0.5;
+    font-weight:600;
+    transition: transform 0.3s;
+}
+.library-content i,a
+{
+    display: flex;
+    color:white;
+    background-color: inherit;
+    font-size: 1rem;
+}
+.library-content a
+{
+    text-decoration: none;
+    margin-left:20px;
+
+}
+.library-content i{
+    margin-left:20px;
+}
+
+.library-content:hover
+{
+    opacity:1;
+    transform: all 0.5s;
+}
+.icon
+{
+    background-color:inherit;
+    opacity: 0.5;
+    margin-left: 10rem;
+    color:white;
+    font-size: 1rem;
+    width:fit-content;
+    border:black;
+    font-weight:600;
+}
+.icon i
+{
+    color:#fff;
+    background-color: inherit;
+    margin:0;
+}
+.icon:hover
+{
+    opacity: 1;
+}
+.library-content .icon i:hover{
+    opacity: 1;
+}
+.fa-regular
+{
+    margin-left:100px;
+}
+.create-playlist
+{
+    width:344px;
+    height:133px;
+    background-color:#1F1F1F;
+    border-radius:0.5rem;
+    margin-left:0.3rem;
+}
+.box
+{
+    background-color:inherit;
+    padding:0.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box .para-1,.para-2
+{
+    background-color: inherit;
+}
+.box .para-1
+{
+    font-size: 1rem;
+    margin-top: 0.9rem;
+    font-weight: 700;
+}
+.box .para-2
+{
+    font-size:0.875rem;
+    margin-top: 0.5rem;
+}
+.button-1
+{
+    border-radius: 100px;
+    background-color:white;
+    color:black;
+    margin-top: 1rem;
+    width:fit-content;
+    height:2rem;
+    padding:0.25rem 1rem;
+    border:none;
+    font-weight:700;
+    transition:transform 0.3s ease-in-out;
+}
+.button-1:hover
+{
+    transform:scale(1.1);
+}
+.browse-podcasts
+{
+    width:344px;
+    height:133px;
+    background-color: #1F1F1F;
+    border-radius:0.5rem;
+    margin-left:0.3rem;
+    margin-top: 1.125rem;
+}
+.cookies
+{
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+.first{
+    background-color:inherit;
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:2rem;
+    margin-left:1rem;
+}
+.first a
+{
+    background-color: inherit;
+    display:flex;
+    text-decoration: none;
+    font-size:0.6875rem;
+    margin-right:2rem;
+    opacity:0.6rem;
+}
+.second{
+    background-color:inherit;
+    display:flex;
+    justify-content: space-evenly;
+    margin-left:0.97rem;
+}
+.second  a
+{
+    background-color: inherit;
+    display:flex;
+    text-decoration: none;
+    margin-right:3rem;
+    font-size:0.6875rem;
+    opacity:0.6rem;
+}
+.cookie
+{
+    background-color:inherit;
+    display:flex;
+    justify-content:left;
+    margin-left:1rem;
+}
+.cookie a
+{
+    background-color: inherit;
+    text-decoration:none;
+    font-size:0.9rem;
+    font-weight: 500;
+}
+.cookie a:hover
+{
+
+    text-decoration: underline;
+    cursor: pointer;
+}
+.English
+{
+    background-color: black;
+    color:white;
+    padding:0.3rem 1rem;
+    width:fit-content;
+    border-radius: 100px;
+    margin-top:2rem;
+    margin-left:1.5rem;
+    transition:transform 0.3s ease-in-out;
+    display: inline-block;
+}
+.English i
+{
+    margin:0;
+}
+.English:hover
+{
+    transform:scale(1.1);
+}
+/* For the main music content */ 
+.main-content
+{
+    background:linear-gradient(to bottom,#1F1F1F,#000);
+    flex:1;
+    margin-top:67px;
+    border-radius:0.5rem;
+    margin-bottom:79px;
+    overflow:auto;
+}
+.first-row
+{
+    background-color: inherit;
+}
+.header
+{
+    display:flex;
+    justify-content: space-between;
+    height:3rem;
+    align-items: center;
+    background-color: inherit;
+    margin-top:0.7rem;
+}
+.header a
+{
+    margin-right:2rem;
+    margin-left:1.5rem;
+    text-decoration:none;
+}
+#header1
+{
+    font-size:1.5rem;
+    font-weight:700;
+}
+#header2
+{
+    font-size:0.9rem;
+}
+.header a:hover
+{
+    text-decoration: underline;
+}
+.artists
+{
+    display:flex;
+    background-color: inherit;
+    margin-left:0.3rem;
+    justify-content: center;
+
+}
+.face-card
+{
+    height:13rem;
+    width:9rem;
+    background-color: inherit;
+    border-radius:0.5rem;
+    padding:0.5rem 0.5rem;
+    position: relative;
+    justify-content: center;
+}
+.face-card:hover
+{
+    background-color:#1F1F1F;
+}
+.face
+{
+    background-color: inherit;
+    justify-content: center;
+}
+.face img
+{
+    background-color: inherit;
+    width:7.5rem;
+    height:7.5rem;
+    object-fit: cover;
+    border-radius:50%;
+    margin-left:1rem;
+}
+.face-details
+{
+    background-color: inherit;
+    margin-top:1rem;
+    line-height: 0.95;
+}
+.face-details a
+{
+    text-decoration: none;
+    font-weight:600;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+}
+.face-details a:hover
+{
+    text-decoration:underline;
+}
+
+.face-details p
+{
+    background-color: inherit;
+    opacity:0.7;
+    margin:0;
+}
+.circle
+{
+    background-color: #1DB954;
+    padding:0.5rem;
+    height:2em;
+    width:2rem;
+    border-radius:100px;
+    margin-left:1.2rem;
+    position: absolute;
+    top:60%;
+    left:55%;
+    z-index:1000;
+    align-items: center;
+    justify-content:space-around;
+    opacity:0;
+    transition: all 0.1s ease-in;
+    transform: translate(-50%,-90%) ;
+}
+.circle i
+{
+    background-color: inherit;
+    color:black;
+    margin-left:0.4rem;
+    margin-top:0.3rem;
+    font-size:1.5rem;
+}
+.circle:hover
+{
+    background-color: #45be6f;
+    transform: scale(1.1) ;
+    cursor: pointer;
+}
+.face-card:hover .circle
+{
+    opacity:1;
+    transform:translate(-50%,-100%)scale(1);
+    box-shadow:0 10px 20px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+.second-row
+{
+    background-color: inherit;
+}
+.songs
+{
+    display:flex;
+    background-color: inherit;
+    margin-left:0.3rem;
+    justify-content: center;
+}
+.song-card
+{
+    height:13rem;
+    width:9rem;
+    background-color: inherit;
+    border-radius:0.5rem;
+    padding:0.5rem 0.5rem;
+    justify-content: center;
+    position: relative;
+}
+.song-card:hover
+{
+    background-color:#1F1F1F;
+}
+.song-card:hover .circle
+{
+    opacity:1;
+    transform:translate(-50%,-100%)scale(1);
+    box-shadow:0 10px 20px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+#akr
+{
+    margin-top:-0.7rem;
+}
+.song
+{
+    background-color: inherit;
+    justify-content: center;
+}
+.song img
+{
+    background-color: inherit;
+    width:8rem;
+    height:8rem;
+    object-fit: cover;
+    border-radius:0.5rem;
+    margin-left:0.7rem;
+}
+.song-details
+{
+    background-color: inherit;
+    margin-top:1rem;
+    line-height: 0.8;
+}
+.song-details a
+{
+    text-decoration: none;
+    font-weight:600;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+}
+.song-details a:hover
+{
+    text-decoration:underline;
+}
+
+.song-details p
+{
+    background-color: inherit;
+    opacity:0.7;
+    margin:0;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+}
+.third-row
+{
+    background-color: inherit;
+}
+.defaults
+{
+    display:flex;
+    background-color: inherit;
+    margin-left:0.3rem;
+}
+.default-card
+{
+    height:12rem;
+    width:9rem;
+    background-color: inherit;
+    border-radius:0.5rem;
+    padding:0.5rem 0.5rem;
+    position: relative;
+    justify-content: center;
+}
+.default-card:hover
+{
+    background-color:#1F1F1F;
+}
+.default-card:hover .circle
+{
+    opacity:1;
+    transform:translate(-50%,-100%)scale(1);
+    box-shadow:0 10px 20px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+.default
+{
+    background-color: inherit;
+    justify-content: center;
+}
+.default img
+{
+    background-color: inherit;
+    width:8rem;
+    height:8rem;
+    object-fit: cover;
+    border-radius:0.5rem;
+    margin-left:0.7rem;
+}
+.default-details
+{
+    background-color: inherit;
+    margin-top:1rem;
+    line-height: 0.8;
+}
+.default-details a
+{
+    text-decoration: none;
+    font-weight:600;
+}
+.default-details a:hover
+{
+    text-decoration:underline;
+}
+
+.default-details p
+{
+    background-color: inherit;
+    opacity:0.7;
+    margin:0;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+}
+.sixth-row
+{
+    background-color: inherit;
+    margin-top:2rem;
+    display:flex;
+    margin-left:0.3rem;
+}
+.details
+{
+    background-color: inherit;
+    display:flex;
+}
+.detail
+{
+    background-color: inherit;
+    height:12rem;
+    width:12rem;
+    display:flex;
+    flex-direction: column;
+    padding:0.5rem 0.8rem;
+    margin-bottom: 1rem;
+}
+.small-detail
+{
+    line-height: 1.7rem;
+    background-color: inherit;
+}
+.small-detail a
+{
+    opacity: 0.7;
+}
+.small-detail a:hover
+{
+    opacity:1;
+}
+
+.detail a
+{
+    text-decoration: none;
+}
+.detail a:hover
+{
+    text-decoration: underline;
+}
+.social
+{ 
+    margin-left:2rem;
+    background-color:inherit;
+    height:13rem;
+    width:12rem;
+    display:flex;
+    justify-content: right;
+    color:white;
+}
+.insta
+{
+    background-color: #1F1F1F;
+    padding:0.5rem;
+    height:1em;
+    width:1rem;
+    border-radius:100px;
+    margin-left:1.2rem;
+}
+.insta:hover
+{
+    background-color: grey;
+}
+.twitter
+{
+    background-color: #1F1F1F;
+    padding:0.5rem;
+    height:1em;
+    width:1rem;
+    border-radius:100px;
+    margin-left:1.2rem;
+}
+.twitter:hover
+{
+    background-color: grey;
+}
+.meta
+{
+    background-color:#1F1F1F;
+    padding:0.5rem;
+    height:1em;
+    width:1rem;
+    border-radius:100px;
+ 
+    margin-left:1.2rem;
+}
+.meta:hover
+{
+    background-color: grey;
+}
+.social i
+{
+    background-color: inherit;
+}
+.line
+{
+    width:71rem;
+    height:0.1rem;
+    background-color:grey;
+    margin-left: 0.2rem;
+    margin-bottom:0.5rem;
+}
+.copy-right
+{
+    margin-top:3rem;
+    margin-left:3em;
+    margin-bottom:3rem;
+    opacity:0.7;
+}
+
+/* For the music player at the bottom of the page */
+.music-player
+{
+    background:linear-gradient(to right,rgb(203, 71, 161),rgb(41, 118, 206));
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:72px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+.info
+{
+    background-color: inherit;
+    margin-top: 1rem;
+    margin-left:1.5rem;
+}
+.info p
+{
+    background-color: inherit;
+}
+.free
+{
+    border:none;
+    width:7rem;
+    height:3rem;
+    border-radius: 100px;
+    margin-left:1rem;
+    color:black;
+    background-color: white;
+    font-weight:800;
+    margin-right:1.02rem;
+    transition: transform 0.3s ease-in-out;
+    margin-top:0.9rem;
+}
+.free:hover
+{
+    transform:scale(1.03);
+}
