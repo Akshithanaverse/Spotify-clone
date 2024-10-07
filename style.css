@@ -393,6 +393,9 @@
 .first-row
 {
     background-color: inherit;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
 }
 .header
 {
@@ -427,6 +430,7 @@
     display:flex;
     background-color: inherit;
     margin-left:0.3rem;
+    flex-wrap: wrap;
     justify-content: center;
 
 }
@@ -438,6 +442,8 @@
     border-radius:0.5rem;
     padding:0.5rem 0.5rem;
     position: relative;
+    margin:0.3px;
+    flex: 0 1 auto;
     justify-content: center;
 }
 .face-card:hover
@@ -524,10 +530,15 @@
 .second-row
 {
     background-color: inherit;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
 }
+
 .songs
 {
     display:flex;
+    flex-wrap: wrap;
     background-color: inherit;
     margin-left:0.3rem;
     justify-content: center;
@@ -600,10 +611,14 @@
 .third-row
 {
     background-color: inherit;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
 }
 .defaults
 {
     display:flex;
+    flex-wrap: wrap;
     background-color: inherit;
     margin-left:0.3rem;
 }
@@ -666,12 +681,29 @@
     font-size: 0.85rem;
     line-height: 1.2rem;
 }
+.fourth-row
+{
+    background-color: inherit;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+.fifth-row
+{
+    background-color: inherit;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
 .sixth-row
 {
     background-color: inherit;
     margin-top:2rem;
     display:flex;
     margin-left:0.3rem;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
 }
 .details
 {
